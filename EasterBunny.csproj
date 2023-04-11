@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>EasterBunny</RootNamespace>
+        <Configurations>Debug;Release</Configurations>
+        <Nullable>enable</Nullable>
+        <AssemblyName>EasterBunny</AssemblyName>
+        <LangVersion>latest</LangVersion>
+        <Optimize>False</Optimize>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <Import Project="..\btd6.targets" />
+
+    <ItemGroup>
+      <None Remove="BunnyIcon.png" />
+      <None Remove="EasterEggDisplay.png" />
+      <None Remove="HeavyEggs.png" />
+      <None Remove="KillerBunny.png" />
+      <None Remove="QuickerSwipes.png" />
+      <None Remove="SharperClaws.png" />
+    </ItemGroup>
+</Project>
